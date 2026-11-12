@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#e5eeff","on-tertiary":"#ffffff","on-surface-variant":"#43474d","surface-container-lowest":"#ffffff","primary-fixed":"#d2e4ff","inverse-on-surface":"#eaf1ff","outline-variant":"#c4c6ce","tertiary-fixed":"#ffdcc3","primary-fixed-dim":"#afc8ed","secondary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#ffb77d","on-secondary":"#ffffff","on-primary-fixed":"#001c37","background":"#f8f9ff","on-secondary-fixed":"#00174b","secondary-fixed":"#dbe1ff","primary-container":"#0f2b48","primary":"#00162d","secondary-container":"#316bf3","on-primary-container":"#7a93b5","surface":"#f8f9ff","on-tertiary-fixed":"#2f1500","error":"#ba1a1a","tertiary":"#261000","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","tertiary-container":"#442100","outline":"#74777e","on-tertiary-fixed-variant":"#6e3900","inverse-primary":"#afc8ed","on-error":"#ffffff","on-primary-fixed-variant":"#2f4867","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-primary":"#ffffff","surface-container-high":"#dce9ff","error-container":"#ffdad6","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#003ea8","on-background":"#0b1c30","surface-container-highest":"#d3e4fe","on-error-container":"#93000a","surface-tint":"#476080","on-secondary-container":"#fefcff","on-tertiary-container":"#da7808","on-surface":"#0b1c30","secondary":"#0051d5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-desktop":"1.5rem","margin":"1rem","space-xs":"0.25rem","space-xl":"1.5rem","space-lg":"1rem","space-sm":"0.5rem","gutter":"1rem","space-md":"0.75rem","gutter-desktop":"1.25rem"},fontFamily:{"label-code":["JetBrains Mono"],"caption":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"metric-tabular":["JetBrains Mono"],"headline-lg":["Inter"]},fontSize:{"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"metric-tabular":["13px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container text-on-primary select-none"><div class="h-14 px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Northgate Corporate Bank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB54wYrXsuOaWdHrnD8reJHFvi0O2dC9lFhayGWTKaZc_-dgxYty01uqB-ZMIWfD7cnpeYn6Y7KBOtAaD883NvIivTNhbydV4I9EgrknWvCH0v7ya-tfwghrA698eTl_itC6QlApNp0TwKct_ZaNWEnAMJ1Xd1VrmhNLgcFnVoszfso3VkD6ega7bPIN4oEnR58VP-LLwEzrUAL3FAuSyClUoPFx59XL07kBTpr0cy7"/><span class="w-px h-6 bg-on-primary-container/30"></span><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-primary tracking-tight">KYC Analyst Assist</span><span class="font-label-code text-label-code px-space-sm py-0.5 rounded bg-primary text-primary-fixed border border-on-primary-container/40 uppercase">PROD-REGULATORY-V4.2</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-md font-label-code text-label-code px-space-md py-1 rounded bg-primary/60"><div class="flex items-center gap-1.5 text-primary-fixed"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span>AI Engine v2.4: Online</span></div><span class="text-on-primary-container">|</span><div class="flex items-center gap-1 text-on-primary"><span class="material-symbols-outlined text-[14px] text-primary-fixed">verified_user</span><span>Guardrails Active</span></div><span class="text-on-primary-container">|</span><span class="text-on-primary-container tabular-nums">UTC 14:32:08</span></div><div class="relative flex items-center justify-center p-1.5 rounded hover:bg-primary text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-caption text-[10px] flex items-center justify-center font-bold">2</span></div><div class="flex items-center gap-space-sm pl-space-sm border-l border-on-primary-container/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6FMYTnD88Sg6EbTGDWCOXCg_oYbiWbLHgSMch10YPoltG3i3JNbMpY0bcFQsIDcjt8_hIBj--7-FiAbMsErPzrtzfb3lC6AsauQHXI_tLPA364NB6asBhua7zE-FFacvYH8BG3vEQzSmAargioA99Sj1GJ0PXDoWT6iQBteWlMlQ-mdhsQt41F4PPkycomIpFx8ysQa7Efq1SY-qjnmXent41jQEnub2xKQsMaCc"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-md text-[13px] leading-tight text-on-primary">Sarah Jenkins, CAMS</span><span class="font-caption text-[11px] text-on-primary-container">Senior Compliance Analyst</span></div><button class="flex items-center p-1 rounded hover:bg-primary text-on-primary-container hover:text-on-primary transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></div><div class="h-10 px-margin-desktop bg-primary border-t border-on-primary-container/20 flex items-center justify-between"><nav class="flex items-center gap-1 h-full" data-active-classes="bg-secondary-container text-on-secondary-container font-headline-md"><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="case-queue" href="#">Case Queue</a><a aria-current="page" class="h-full px-space-md flex items-center transition-colors bg-secondary-container text-on-secondary-container font-headline-md" data-path="active-review" href="#">Active Review (Apex Logistics Ltd)</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="ownership-structure" href="#">Ownership Structure</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="exception-review" href="#">Exception Review (1 Flag)</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="audit-trail" href="#">Audit Trail</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="pilot-analytics" href="#">Pilot Analytics</a></nav><div class="hidden md:flex items-center gap-space-sm text-on-primary-container font-caption text-caption"><span class="material-symbols-outlined text-[15px]">lock</span><span>Bank Grade AML/KYC Enclave</span></div></div></header><aside class="fixed left-0 top-24 bottom-0 w-64 bg-surface-container-low border-r border-outline-variant/30 z-30 flex flex-col justify-between p-space-md overflow-y-auto"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-1 font-label-code text-label-code text-on-surface-variant uppercase tracking-wider">Active Case Entity</div><div class="p-space-sm rounded bg-surface-container border border-outline-variant/40 flex flex-col gap-1"><div class="font-headline-md text-headline-md text-on-surface truncate">Apex Logistics Ltd</div><div class="font-label-code text-label-code text-on-surface-variant">ID: KY-882194-LX</div><div class="flex items-center gap-1 mt-1 font-caption text-caption text-secondary font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>In Progress: Phase 2</span></div></div><div class="mt-space-md px-space-sm font-label-code text-label-code text-on-surface-variant uppercase tracking-wider">Verification Checklist</div><div class="flex flex-col gap-1"><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>Certificate of Inc.</span><span class="font-label-code text-[11px] text-on-surface-variant">99.1%</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>Articles of Assoc.</span><span class="font-label-code text-[11px] text-on-surface-variant">94.6%</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-error">error</span>UBO Disclosure</span><span class="font-label-code text-[11px] text-error font-bold">FLAGGED</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">pending</span>OFAC & PEP List</span><span class="font-label-code text-[11px] text-on-surface-variant">QUEUED</span></div></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col gap-1"><div class="flex items-center justify-between text-on-surface-variant font-caption text-caption"><span>Review SLA</span><span class="font-metric-tabular text-metric-tabular text-on-surface">01:45:12</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full w-2/3"></div></div></div></aside><div class="pl-64"><main class="w-full pt-24 min-h-screen bg-background border-outline-variant/20"><div class="flex flex-col w-full gap-space-lg p-margin-desktop">
+<!-- Case Header Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code bg-surface-container-high text-on-surface px-space-sm py-1 rounded">#CASE-2024-8841</span>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight truncate">Apex Logistics Ltd</h1>
+<span class="font-caption text-caption text-on-surface-variant font-medium">(UK Co #04829104)</span>
+</div>
+<!-- Guardrail check pill -->
+<div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container rounded-full text-secondary font-caption text-caption">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-semibold">Guardrail passed: Dual source reconciliation verified</span>
+</div>
+</div>
+<!-- Progress & View Controls -->
+<div class="flex flex-wrap items-center gap-space-lg w-full xl:w-auto justify-between xl:justify-end">
+<!-- Progress Bar Tracker -->
+<div class="flex flex-col gap-1 min-w-[190px]">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface-variant">Review Progress</span>
+<span class="font-metric-tabular text-metric-tabular text-secondary font-bold" id="progress-text">2 of 3 fields reviewed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full transition-all duration-300 w-2/3" id="progress-bar-fill"></div>
+</div>
+</div>
+<div class="h-6 w-px bg-surface-container-highest hidden md:block"></div>
+<!-- View Switchers -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-colors" id="structure-toggle-btn" title="Switch to Entity Hierarchy Graphic">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">account_tree</span>
+<span>Structure Diagram</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="theme-visual-toggle" title="Toggle High-Contrast Workstation View">
+<span class="material-symbols-outlined text-[18px]">contrast</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Split View Main Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Source Document Viewer (Dark Slate Canvas) -->
+<div class="lg:col-span-6 flex flex-col bg-primary-container rounded-xl overflow-hidden shadow-md">
+<!-- Doc Viewer Header -->
+<div class="px-space-md py-space-sm bg-primary flex flex-wrap items-center justify-between gap-space-sm text-primary-fixed">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">description</span>
+<span class="font-label-code text-label-code text-on-primary truncate max-w-[210px]" title="Articles_of_Association_ApexLogistics_vFinal.pdf">Articles_of_Association_ApexLogistics_vFinal.pdf</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/10 text-on-primary-container font-label-code text-[10px]">SECURED ARCHIVE</span>
+</div>
+<!-- Controls -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-primary-container rounded px-1.5 py-0.5 font-label-code text-label-code text-primary-fixed">
+<button class="hover:text-on-primary px-1" title="Previous Page"><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<span class="px-1.5 font-metric-tabular">Page 2 of 50</span>
+<button class="hover:text-on-primary px-1" title="Next Page"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary-fixed-dim">
+<button class="p-1 hover:text-on-primary" title="Zoom Out"><span class="material-symbols-outlined text-[16px]">zoom_out</span></button>
+<span class="font-metric-tabular text-[11px]">100%</span>
+<button class="p-1 hover:text-on-primary" title="Zoom In"><span class="material-symbols-outlined text-[16px]">zoom_in</span></button>
+</div>
+<div class="hidden sm:flex items-center bg-primary-container rounded px-2 py-0.5 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px] mr-1">search</span>
+<input class="bg-transparent text-[11px] font-label-code text-primary-fixed focus:outline-none w-20" placeholder="Search doc..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Document Content Body -->
+<div class="p-space-md overflow-x-auto select-text font-label-code text-body-sm leading-relaxed text-inverse-on-surface bg-primary-container relative">
+<!-- Watermark / Document Header Tag -->
+<div class="p-2 mb-space-md rounded bg-primary/80 text-primary-fixed font-label-code text-[11px] tracking-wide flex items-center justify-between">
+<span>--- DOCUMENT SECTION: SCHEDULE 2 - REGISTER OF PERSONS WITH SIGNIFICANT CONTROL (PSC) [PAGE 2 OF 50] ---</span>
+<span class="text-primary-fixed-dim">ENCRYPTED CITATION TARGET</span>
+</div>
+<!-- Monospace OCR lines -->
+<div class="flex flex-col gap-0.5 font-label-code text-[12px] leading-5">
+<!-- Non-highlighted lines -->
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">10</span>
+<span class="font-mono">3.1 The Company hereby registers and acknowledges the following beneficial interests:</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">11</span>
+<span class="font-mono">3.2 Under Part 21A of the Companies Act 2006, notification is hereby recorded for</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">12</span>
+<span class="font-mono">    registrable relevant legal entities and individual registrable persons.</span>
+</div>
+<!-- Active Anchor Highlight Box with floating citation indicator -->
+<div class="relative my-1 rounded bg-tertiary-container text-tertiary-fixed p-1.5 transition-all" id="target-citation-lines">
+<!-- Floating Indicator Pill -->
+<div class="absolute -top-3.5 right-3 bg-tertiary text-on-tertiary font-label-code text-[10px] px-2 py-0.5 rounded shadow flex items-center gap-1.5 uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+<span>Active Citation Match: Field #2 (Beneficial Owner Shareholding)</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5">
+<span class="w-8 shrink-0 text-right select-none font-bold text-tertiary-fixed-dim">13</span>
+<span class="font-mono font-semibold tracking-tight text-on-tertiary">>>> Line 13: Name of Registrable Person: JOHN STERLING</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5">
+<span class="w-8 shrink-0 text-right select-none font-bold text-tertiary-fixed-dim">14</span>
+<span class="font-mono font-semibold tracking-tight text-on-tertiary">>>> Line 14: Residential Address: 14 St. Dunstan’s Hill, London EC3R 8HL, United Kingdom</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5">
+<span class="w-8 shrink-0 text-right select-none font-bold text-tertiary-fixed-dim">15</span>
+<span class="font-mono font-semibold tracking-tight text-on-tertiary">>>> Line 15: Nature of Control: Ownership of shares – 75% or more of voting rights</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5">
+<span class="w-8 shrink-0 text-right select-none font-bold text-tertiary-fixed-dim">16</span>
+<span class="font-mono font-semibold tracking-tight text-on-tertiary">>>> Line 16: Effective Percentage Holding: 75.00% Ordinary Voting Capital directly held.</span>
+</div>
+</div>
+<!-- Trailing text lines -->
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">17</span>
+<span class="font-mono">3.3 Date on which person became a registrable person: 12 March 2019.</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">18</span>
+<span class="font-mono">3.4 No intermediary corporate holding entities or nominee agreements are registered.</span>
+</div>
+<div class="flex items-start gap-space-md py-0.5 text-on-primary-container/70">
+<span class="w-8 shrink-0 text-right select-none text-on-primary-container/40">19</span>
+<span class="font-mono">3.5 The register was duly verified and countersigned by the Corporate Secretary.</span>
+</div>
+</div>
+<!-- Document Metadata footer -->
+<div class="mt-space-lg pt-space-sm border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container font-caption text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history_edu</span> SHA-256: 8f42..c911 (Verified)
+          </span>
+<span class="font-label-code">OCR Confidence: 99.4% Dual-Engine</span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Field Verification Workspace -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-md">
+<!-- Section Header -->
+<div class="flex items-start justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">AI Extracted Field Register</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Traceable to source citations. Human acceptance required for compliance sign-off.</p>
+</div>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-surface-container text-secondary font-semibold">STAGE 2 / PSC</span>
+</div>
+<!-- Verification Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-code text-[11px] uppercase tracking-wider">
+<th class="py-2.5 px-space-sm">Field</th>
+<th class="py-2.5 px-space-sm">AI Value</th>
+<th class="py-2.5 px-space-sm text-center">Confidence</th>
+<th class="py-2.5 px-space-sm text-center">Citation</th>
+<th class="py-2.5 px-space-sm text-right">Analyst Decision</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm">
+<!-- ROW 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm font-headline-md text-on-surface align-middle">
+                  Legal Entity Name
+                </td>
+<td class="py-3 px-space-sm font-mono text-[13px] text-on-surface align-middle font-medium">
+                  Apex Logistics Ltd
+                </td>
+<td class="py-3 px-space-sm text-center align-middle">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-code text-[11px] font-bold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> 98% High
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-center align-middle">
+<button class="inline-flex items-center gap-1 font-label-code text-[11px] px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary hover:text-on-secondary transition-colors" title="Jump to Page 1">
+<span class="material-symbols-outlined text-[13px]">open_in_new</span> [Page 1, Line 4]
+                  </button>
+</td>
+<td class="py-3 px-space-sm text-right align-middle">
+<div class="flex items-center justify-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-secondary font-caption text-caption font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> Accepted
+                    </span>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container text-caption" title="Re-evaluate field">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2 (Active Document Anchor) -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors">
+<td class="py-3 px-space-sm font-headline-md text-on-surface align-middle">
+<div class="flex items-center gap-1">
+<span>Beneficial Owner & Holding</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container" title="Actively Highlighted"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm font-mono text-[13px] text-on-surface align-middle font-semibold">
+                  John Sterling <span class="text-on-surface-variant text-[12px]">(75.00% Ordinary Voting Shares)</span>
+</td>
+<td class="py-3 px-space-sm text-center align-middle">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-code text-[11px] font-bold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> 94% High
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-center align-middle">
+<!-- Active Anchor chip with amber indicator -->
+<button class="inline-flex items-center gap-1 font-label-code text-[11px] px-2 py-1 rounded bg-tertiary text-on-tertiary font-bold shadow-sm" title="Active Source Citation in Left Panel">
+<span class="material-symbols-outlined text-[13px]">my_location</span> [Page 2, Lines 13–16]
+                  </button>
+</td>
+<td class="py-3 px-space-sm text-right align-middle">
+<div class="flex items-center justify-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-secondary font-caption text-caption font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> Accepted
+                    </span>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container text-caption" title="Re-evaluate field">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3 (Pending Interaction Row) -->
+<tr class="bg-surface-container hover:bg-surface-container-high transition-colors" id="row-interactive-3">
+<td class="py-3 px-space-sm font-headline-md text-on-surface align-middle">
+                  Director / Controller Identity
+                </td>
+<td class="py-3 px-space-sm font-mono text-[13px] text-on-surface align-middle">
+<div class="flex flex-col">
+<span class="font-medium" id="field-3-display-value">John Sterling (Sole Managing Director)</span>
+<span class="hidden font-caption text-[11px] text-tertiary-container font-semibold" id="field-3-override-badge">Overridden by Analyst</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center align-middle">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-code text-[11px] font-bold">
+<span class="material-symbols-outlined text-[13px]">warning</span> 82% Medium
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-center align-middle">
+<button class="inline-flex items-center gap-1 font-label-code text-[11px] px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary hover:text-on-secondary transition-colors" title="Jump to Page 4">
+<span class="material-symbols-outlined text-[13px]">open_in_new</span> [Page 4, Line 22]
+                  </button>
+</td>
+<td class="py-3 px-space-sm text-right align-middle">
+<!-- Pending Action Buttons -->
+<div class="flex items-center justify-end gap-1.5" id="row-3-actions">
+<button class="px-2.5 py-1 rounded bg-secondary-container hover:bg-secondary text-on-secondary-container font-headline-md text-caption flex items-center gap-1 transition-all shadow-sm" id="btn-accept-row3">
+<span class="material-symbols-outlined text-[14px]">check</span> Accept
+                    </button>
+<button class="px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary hover:text-on-tertiary font-headline-md text-caption flex items-center gap-1 transition-all" id="btn-edit-row3">
+<span class="material-symbols-outlined text-[14px]">edit</span> Edit
+                    </button>
+<button class="px-2 py-1 rounded bg-error-container text-on-error-container hover:bg-error hover:text-on-error font-headline-md text-caption flex items-center gap-1 transition-all" id="btn-reject-row3">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Post-action finalized badge (hidden by default) -->
+<div class="hidden items-center justify-end gap-1.5" id="row-3-finalized">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-caption text-caption font-bold" id="row-3-final-badge"></span>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container text-caption" id="btn-undo-row3" title="Undo decision">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Inline Override Box (Hidden until Edit clicked) -->
+<div class="hidden p-space-md rounded bg-surface-container-low flex-col gap-space-sm transition-all" id="override-input-panel">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-body-sm text-on-surface">Analyst Value Override (Field #3)</span>
+<span class="font-caption text-caption text-on-surface-variant">Regulatory Audit Entry</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<input class="flex-1 px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface font-mono text-[13px] focus:outline-none" id="override-text-input" type="text" value="John Sterling (Sole Managing Director & Chairman)"/>
+<button class="px-space-md py-1.5 rounded bg-secondary text-on-secondary font-headline-md text-body-sm" id="override-save-btn">Save & Accept</button>
+<button class="px-space-md py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm" id="override-cancel-btn">Cancel</button>
+</div>
+</div>
+</div>
+<!-- BOTTOM SECTION: MLRO Section 'Human Judgment Only' -->
+<div class="bg-surface-container-low rounded-xl shadow-sm p-space-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Institutional Blue Indicator Bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<!-- Header & Strict Mandate Callout -->
+<div class="flex flex-col gap-1 pl-1">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<h3 class="font-headline-md text-headline-md uppercase tracking-wide">MLRO COMPLIANCE MANDATE: Human Judgment Only</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            The AI verification engine never assigns risk ratings and cannot submit regulatory filings. Every field must be reviewed and a risk classification manually assigned by an authorized compliance officer.
+          </p>
+</div>
+<!-- MLRO Input Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pl-1">
+<!-- Risk Classification Dropdown -->
+<div class="md:col-span-5 flex flex-col gap-1">
+<label class="font-headline-md text-body-sm text-on-surface flex items-center justify-between" for="mlro-risk-tier">
+<span>MLRO Risk Classification <span class="text-error">*</span></span>
+<span class="font-caption text-[11px] text-on-surface-variant font-normal">Required</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none px-3 py-2 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none pr-8 cursor-pointer" id="mlro-risk-tier">
+<option disabled="" selected="" value="">-- Select Risk Tier (Required) --</option>
+<option value="low">Standard / Low Risk (Eligible for Simplified DD)</option>
+<option value="medium">Medium Risk (Standard Ongoing Monitoring)</option>
+<option value="high">High Risk (Enhanced Due Diligence Mandated)</option>
+<option value="prohibited">Prohibited Entity (Submit Immediate SAR)</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Notes / Justification Text Area -->
+<div class="md:col-span-7 flex flex-col gap-1">
+<label class="font-headline-md text-body-sm text-on-surface" for="mlro-notes">
+              Analyst Regulatory Justification & Reconciliation Notes
+            </label>
+<textarea class="w-full px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none resize-none" id="mlro-notes" placeholder="Document source reconciliation notes, verification registry cross-checks, or beneficial ownership notes..." rows="2"></textarea>
+</div>
+</div>
+<!-- Action Footer Strip -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pl-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error" id="validation-icon">info</span>
+<span class="font-caption text-caption text-error font-medium" id="validation-status-text">1 field decision remaining • Risk rating required</span>
+</div>
+<div class="flex items-center gap-space-sm justify-end">
+<button class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-md text-body-sm transition-colors">
+              Save Draft
+            </button>
+<!-- Submit Button (Disabled by default) -->
+<button class="px-space-lg py-2 rounded bg-surface-container-highest text-on-surface-variant cursor-not-allowed font-headline-md text-body-sm flex items-center gap-1.5 transition-all" disabled="" id="btn-submit-regulatory-case" title="Disabled until all 3 fields have an explicit decision and MLRO risk rating is selected">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Sign and Submit Regulatory Case</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initWorkspaceInteractions() {
+    let field3Status = 'pending'; // 'pending' | 'accepted' | 'overridden' | 'rejected'
+    let riskSelected = false;
+
+    const rowActions = document.getElementById('row-3-actions');
+    const rowFinalized = document.getElementById('row-3-finalized');
+    const finalBadge = document.getElementById('row-3-final-badge');
+    const overridePanel = document.getElementById('override-input-panel');
+    const fieldDisplayVal = document.getElementById('field-3-display-value');
+    const overrideBadge = document.getElementById('field-3-override-badge');
+
+    const progressBarFill = document.getElementById('progress-bar-fill');
+    const progressText = document.getElementById('progress-text');
+    const validationStatusText = document.getElementById('validation-status-text');
+    const validationIcon = document.getElementById('validation-icon');
+    const submitBtn = document.getElementById('btn-submit-regulatory-case');
+    const riskSelect = document.getElementById('mlro-risk-tier');
+
+    function checkFormReadiness() {
+      const allFieldsDone = field3Status !== 'pending';
+      const riskDone = riskSelect.value !== '';
+
+      if (allFieldsDone && riskDone) {
+        progressText.textContent = '3 of 3 fields reviewed (Complete)';
+        progressBarFill.style.width = '100%';
+        progressBarFill.classList.remove('bg-secondary-container');
+        progressBarFill.classList.add('bg-secondary');
+
+        validationStatusText.textContent = 'All statutory fields approved & risk tier classified. Ready for AML sign-off.';
+        validationStatusText.classList.remove('text-error');
+        validationStatusText.classList.add('text-secondary');
+        validationIcon.textContent = 'check_circle';
+        validationIcon.classList.remove('text-error');
+        validationIcon.classList.add('text-secondary');
+
+        submitBtn.removeAttribute('disabled');
+        submitBtn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant', 'cursor-not-allowed');
+        submitBtn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'hover:bg-secondary', 'cursor-pointer', 'shadow-md');
+        submitBtn.title = 'Ready to sign and log to regulatory immutable audit chain';
+      } else {
+        const fieldsReviewed = allFieldsDone ? '3 of 3' : '2 of 3';
+        progressText.textContent = fieldsReviewed + ' fields reviewed';
+        progressBarFill.style.width = allFieldsDone ? '100%' : '66.66%';
+        progressBarFill.classList.remove('bg-secondary');
+        progressBarFill.classList.add('bg-secondary-container');
+
+        submitBtn.setAttribute('disabled', 'true');
+        submitBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'hover:bg-secondary', 'cursor-pointer', 'shadow-md');
+        submitBtn.classList.add('bg-surface-container-highest', 'text-on-surface-variant', 'cursor-not-allowed');
+
+        validationStatusText.classList.remove('text-secondary');
+        validationStatusText.classList.add('text-error');
+        validationIcon.textContent = 'info';
+        validationIcon.classList.remove('text-secondary');
+        validationIcon.classList.add('text-error');
+
+        if (!allFieldsDone && !riskDone) {
+          validationStatusText.textContent = '1 field decision remaining • Risk rating required';
+        } else if (!allFieldsDone) {
+          validationStatusText.textContent = '1 field decision remaining';
+        } else {
+          validationStatusText.textContent = 'MLRO Risk Classification selection required';
+        }
+      }
+    }
+
+    // Accept Row 3
+    document.getElementById('btn-accept-row3').addEventListener('click', () => {
+      field3Status = 'accepted';
+      rowActions.classList.add('hidden');
+      rowFinalized.classList.remove('hidden');
+      rowFinalized.classList.add('flex');
+      finalBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-secondary font-caption text-caption font-bold';
+      finalBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Accepted';
+      overridePanel.classList.add('hidden');
+      checkFormReadiness();
+    });
+
+    // Edit Row 3
+    document.getElementById('btn-edit-row3').addEventListener('click', () => {
+      overridePanel.classList.remove('hidden');
+      overridePanel.classList.add('flex');
+    });
+
+    document.getElementById('override-cancel-btn').addEventListener('click', () => {
+      overridePanel.classList.add('hidden');
+      overridePanel.classList.remove('flex');
+    });
+
+    document.getElementById('override-save-btn').addEventListener('click', () => {
+      const customVal = document.getElementById('override-text-input').value;
+      if (customVal.trim()) {
+        fieldDisplayVal.textContent = customVal;
+        overrideBadge.classList.remove('hidden');
+        field3Status = 'overridden';
+        rowActions.classList.add('hidden');
+        rowFinalized.classList.remove('hidden');
+        rowFinalized.classList.add('flex');
+        finalBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption font-bold';
+        finalBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">published_with_changes</span> Overridden';
+        overridePanel.classList.add('hidden');
+        overridePanel.classList.remove('flex');
+        checkFormReadiness();
+      }
+    });
+
+    // Reject Row 3
+    document.getElementById('btn-reject-row3').addEventListener('click', () => {
+      field3Status = 'rejected';
+      fieldDisplayVal.classList.add('line-through', 'text-error');
+      rowActions.classList.add('hidden');
+      rowFinalized.classList.remove('hidden');
+      rowFinalized.classList.add('flex');
+      finalBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-caption text-caption font-bold';
+      finalBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">close</span> Rejected';
+      overridePanel.classList.add('hidden');
+      checkFormReadiness();
+    });
+
+    // Undo Row 3
+    document.getElementById('btn-undo-row3').addEventListener('click', () => {
+      field3Status = 'pending';
+      fieldDisplayVal.classList.remove('line-through', 'text-error');
+      overrideBadge.classList.add('hidden');
+      rowActions.classList.remove('hidden');
+      rowFinalized.classList.add('hidden');
+      rowFinalized.classList.remove('flex');
+      checkFormReadiness();
+    });
+
+    // Risk Classification change
+    riskSelect.addEventListener('change', () => {
+      checkFormReadiness();
+    });
+
+    // Structure Toggle Toast Notification
+    const structBtn = document.getElementById('structure-toggle-btn');
+    structBtn.addEventListener('click', () => {
+      structBtn.classList.toggle('bg-secondary-container');
+      structBtn.classList.toggle('text-on-secondary-container');
+    });
+
+    // Submit handler
+    submitBtn.addEventListener('click', () => {
+      if (submitBtn.disabled) return;
+      alert('CASE #CASE-2024-8841: Formal MLRO regulatory sign-off generated and dispatched to the AML immutable ledger.');
+    });
+  })();
+</script></main></div></body></html>

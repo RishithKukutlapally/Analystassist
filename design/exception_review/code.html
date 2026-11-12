@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#e5eeff","on-tertiary":"#ffffff","on-surface-variant":"#43474d","surface-container-lowest":"#ffffff","primary-fixed":"#d2e4ff","inverse-on-surface":"#eaf1ff","outline-variant":"#c4c6ce","tertiary-fixed":"#ffdcc3","primary-fixed-dim":"#afc8ed","secondary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#ffb77d","on-secondary":"#ffffff","on-primary-fixed":"#001c37","background":"#f8f9ff","on-secondary-fixed":"#00174b","secondary-fixed":"#dbe1ff","primary-container":"#0f2b48","primary":"#00162d","secondary-container":"#316bf3","on-primary-container":"#7a93b5","surface":"#f8f9ff","on-tertiary-fixed":"#2f1500","error":"#ba1a1a","tertiary":"#261000","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","tertiary-container":"#442100","outline":"#74777e","on-tertiary-fixed-variant":"#6e3900","inverse-primary":"#afc8ed","on-error":"#ffffff","on-primary-fixed-variant":"#2f4867","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-primary":"#ffffff","surface-container-high":"#dce9ff","error-container":"#ffdad6","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#003ea8","on-background":"#0b1c30","surface-container-highest":"#d3e4fe","on-error-container":"#93000a","surface-tint":"#476080","on-secondary-container":"#fefcff","on-tertiary-container":"#da7808","on-surface":"#0b1c30","secondary":"#0051d5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-desktop":"1.5rem","margin":"1rem","space-xs":"0.25rem","space-xl":"1.5rem","space-lg":"1rem","space-sm":"0.5rem","gutter":"1rem","space-md":"0.75rem","gutter-desktop":"1.25rem"},fontFamily:{"label-code":["JetBrains Mono"],"caption":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"metric-tabular":["JetBrains Mono"],"headline-lg":["Inter"]},fontSize:{"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"metric-tabular":["13px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container text-on-primary select-none"><div class="h-14 px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Northgate Corporate Bank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB54wYrXsuOaWdHrnD8reJHFvi0O2dC9lFhayGWTKaZc_-dgxYty01uqB-ZMIWfD7cnpeYn6Y7KBOtAaD883NvIivTNhbydV4I9EgrknWvCH0v7ya-tfwghrA698eTl_itC6QlApNp0TwKct_ZaNWEnAMJ1Xd1VrmhNLgcFnVoszfso3VkD6ega7bPIN4oEnR58VP-LLwEzrUAL3FAuSyClUoPFx59XL07kBTpr0cy7"/><span class="w-px h-6 bg-on-primary-container/30"></span><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-primary tracking-tight">KYC Analyst Assist</span><span class="font-label-code text-label-code px-space-sm py-0.5 rounded bg-primary text-primary-fixed border border-on-primary-container/40 uppercase">PROD-REGULATORY-V4.2</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-md font-label-code text-label-code px-space-md py-1 rounded bg-primary/60"><div class="flex items-center gap-1.5 text-primary-fixed"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span>AI Engine v2.4: Online</span></div><span class="text-on-primary-container">|</span><div class="flex items-center gap-1 text-on-primary"><span class="material-symbols-outlined text-[14px] text-primary-fixed">verified_user</span><span>Guardrails Active</span></div><span class="text-on-primary-container">|</span><span class="text-on-primary-container tabular-nums">UTC 14:32:08</span></div><div class="relative flex items-center justify-center p-1.5 rounded hover:bg-primary text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-caption text-[10px] flex items-center justify-center font-bold">2</span></div><div class="flex items-center gap-space-sm pl-space-sm border-l border-on-primary-container/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6FMYTnD88Sg6EbTGDWCOXCg_oYbiWbLHgSMch10YPoltG3i3JNbMpY0bcFQsIDcjt8_hIBj--7-FiAbMsErPzrtzfb3lC6AsauQHXI_tLPA364NB6asBhua7zE-FFacvYH8BG3vEQzSmAargioA99Sj1GJ0PXDoWT6iQBteWlMlQ-mdhsQt41F4PPkycomIpFx8ysQa7Efq1SY-qjnmXent41jQEnub2xKQsMaCc"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-md text-[13px] leading-tight text-on-primary">Sarah Jenkins, CAMS</span><span class="font-caption text-[11px] text-on-primary-container">Senior Compliance Analyst</span></div><button class="flex items-center p-1 rounded hover:bg-primary text-on-primary-container hover:text-on-primary transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></div><div class="h-10 px-margin-desktop bg-primary border-t border-on-primary-container/20 flex items-center justify-between"><nav class="flex items-center gap-1 h-full" data-active-classes="bg-secondary-container text-on-secondary-container font-headline-md"><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="case-queue" href="#">Case Queue</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="active-review" href="#">Active Review (Apex Logistics Ltd)</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="ownership-structure" href="#">Ownership Structure</a><a aria-current="page" class="h-full px-space-md flex items-center transition-colors bg-secondary-container text-on-secondary-container font-headline-md" data-path="exception-review" href="#">Exception Review (1 Flag)</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="audit-trail" href="#">Audit Trail</a><a class="h-full px-space-md flex items-center font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="pilot-analytics" href="#">Pilot Analytics</a></nav><div class="hidden md:flex items-center gap-space-sm text-on-primary-container font-caption text-caption"><span class="material-symbols-outlined text-[15px]">lock</span><span>Bank Grade AML/KYC Enclave</span></div></div></header><aside class="fixed left-0 top-24 bottom-0 w-64 bg-surface-container-low border-r border-outline-variant/30 z-30 flex flex-col justify-between p-space-md overflow-y-auto"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-1 font-label-code text-label-code text-on-surface-variant uppercase tracking-wider">Active Case Entity</div><div class="p-space-sm rounded bg-surface-container border border-outline-variant/40 flex flex-col gap-1"><div class="font-headline-md text-headline-md text-on-surface truncate">Apex Logistics Ltd</div><div class="font-label-code text-label-code text-on-surface-variant">ID: KY-882194-LX</div><div class="flex items-center gap-1 mt-1 font-caption text-caption text-secondary font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>In Progress: Phase 2</span></div></div><div class="mt-space-md px-space-sm font-label-code text-label-code text-on-surface-variant uppercase tracking-wider">Verification Checklist</div><div class="flex flex-col gap-1"><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>Certificate of Inc.</span><span class="font-label-code text-[11px] text-on-surface-variant">99.1%</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>Articles of Assoc.</span><span class="font-label-code text-[11px] text-on-surface-variant">94.6%</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-error">error</span>UBO Disclosure</span><span class="font-label-code text-[11px] text-error font-bold">FLAGGED</span></div><div class="flex items-center justify-between p-space-sm rounded hover:bg-surface-container text-on-surface font-body-sm text-body-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">pending</span>OFAC & PEP List</span><span class="font-label-code text-[11px] text-on-surface-variant">QUEUED</span></div></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col gap-1"><div class="flex items-center justify-between text-on-surface-variant font-caption text-caption"><span>Review SLA</span><span class="font-metric-tabular text-metric-tabular text-on-surface">01:45:12</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full w-2/3"></div></div></div></aside><div class="pl-64"><main class="w-full pt-24 min-h-screen bg-background border-outline-variant/20"><div class="flex flex-col w-full">
+<!-- Persistent Sanctions & Triage Status Bar -->
+<div class="bg-primary px-margin-desktop py-space-sm text-on-primary flex flex-wrap items-center justify-between gap-gutter shadow-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-error text-on-error font-label-code text-label-code font-bold uppercase animate-pulse">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span>2 Critical Exceptions Flagged</span>
+</div>
+<span class="text-on-primary-container">|</span>
+<div class="flex items-center gap-2 truncate">
+<span class="font-headline-lg text-headline-lg tracking-tight text-on-primary">Nautilus Offshore BVI</span>
+<span class="font-label-code text-label-code text-primary-fixed bg-primary-container px-space-sm py-0.5 rounded">BVI Co #IBC-782910</span>
+<span class="font-caption text-caption text-on-primary-container">Case: #CASE-2024-8820</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-2 bg-primary-container/80 px-space-md py-1 rounded">
+<span class="font-caption text-caption text-on-primary-container uppercase">Resolution Progress</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high/40"></span>
+</div>
+<span class="font-label-code text-label-code text-primary-fixed ml-1">Step 1 of 2</span>
+</div>
+<div class="hidden lg:flex items-center gap-1.5 font-label-code text-[11px] text-primary-fixed bg-primary/40 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[13px]">gavel</span>
+<span>MLRO Escalation Protocol Triggered</span>
+</div>
+</div>
+</div>
+<!-- Workstation Viewport Area -->
+<div class="p-margin-desktop space-y-space-lg max-w-[1720px] mx-auto w-full">
+<!-- Exception Overview Banner -->
+<div class="relative overflow-hidden rounded-xl bg-error-container/40 p-space-lg shadow-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-error text-on-error font-bold uppercase tracking-wider">
+              Exception #EX-8820-01
+            </span>
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface text-error font-semibold">
+              Confidence Under 70% (Scored 54% Low)
+            </span>
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-medium">
+              Category: Beneficial Ownership Conflict
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-background tracking-tight">
+            Conflicting Beneficial Ownership & Nominee Disclosure
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+            The AI parsed two distinct clauses regarding the identity and power of attorney for the controlling party. Document A indicates a direct nominee director, while Document B asserts an undisclosed bearer trust with physical certificates.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-start lg:self-center">
+<div class="bg-surface rounded-lg p-space-sm shadow-sm flex items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">SLA Risk Impact</span>
+<span class="font-metric-tabular text-metric-tabular text-error font-bold">High (Level 3 Triage)</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Side-by-Side Comparison Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg">
+<!-- Source A Card -->
+<div class="flex flex-col bg-surface rounded-xl shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md">
+<!-- Source Header -->
+<div class="bg-surface-container-low p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-secondary-container/20 text-secondary font-label-code text-label-code flex items-center justify-center font-bold">A</span>
+<div class="min-w-0">
+<div class="font-headline-md text-headline-md text-on-surface truncate">Certificate of Incumbency</div>
+<div class="font-label-code text-label-code text-on-surface-variant">Doc Ref: DOI-2023-BVI-901 • Filed 14/01/2018</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-code text-label-code shrink-0">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>54.1% LOW: CHECK SOURCE</span>
+</div>
+</div>
+<!-- Citation Anchor & Visual Preview -->
+<div class="p-space-lg flex-1 flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Extracted OCR Anchor</span>
+<button class="flex items-center gap-1 font-label-code text-label-code text-secondary bg-surface-container px-2 py-1 rounded hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[14px]">zoom_in</span>
+<span>[p.14:L9] Inspector View</span>
+</button>
+</div>
+<!-- Document Dark Canvas Preview -->
+<div class="bg-primary text-on-primary rounded-lg p-space-md relative overflow-hidden">
+<div class="absolute top-2 right-2 flex items-center gap-1 text-[11px] font-label-code text-on-primary-container bg-primary-container/80 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[12px]">document_scanner</span>
+<span>Optical Engine v4.2</span>
+</div>
+<div class="font-label-code text-[11px] text-on-primary-container mb-2">PAGE 14 — REGISTRATION DEED PARTICULARS</div>
+<div class="font-label-code text-body-sm leading-relaxed text-inverse-on-surface">
+<span class="text-on-primary-container">Line 07: ...in accordance with International Business Companies Act 1984...</span><br/>
+<span class="text-on-primary-container">Line 08: ...the capital shall be divided into 50,000 registered voting units...</span><br/>
+<span class="bg-tertiary-container/80 text-on-tertiary-container px-1 py-0.5 rounded font-semibold inline-block my-1">
+                Line 09: "...registered nominee director Michael Sterling holds powers of appointment under Nominee Agreement dated 14/01/2018..."
+              </span><br/>
+<span class="text-on-primary-container">Line 10: ...executed under corporate seal in Road Town, Tortola, British Virgin Islands.</span>
+</div>
+</div>
+<!-- Parsed Entities Key-Value Grid -->
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-sm">
+<div class="font-caption text-caption text-on-surface-variant uppercase font-semibold">AI Synthesized Structure (Source A)</div>
+<div class="grid grid-cols-2 gap-space-sm font-body-sm text-body-sm">
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Identified Controlling Party</span>
+<span class="font-headline-md text-headline-md text-on-surface">Michael Sterling</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Appointed Legal Capacity</span>
+<span class="font-label-code text-label-code text-secondary font-bold">Nominee Director</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Supporting Instrument</span>
+<span class="text-on-surface">Nominee Agreement (2018)</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Disclosed UBO Percentage</span>
+<span class="text-on-surface">0.00% Direct (Nominee Proxy)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-on-surface-variant">Registry Hash: <span class="font-label-code">0x74a...8f91</span></span>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-headline-md text-body-sm transition-all shadow-sm" id="btnSourceA" onclick="handleSelection('sourceA')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Accept Source A Extraction</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Source B Card -->
+<div class="flex flex-col bg-surface rounded-xl shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md">
+<!-- Source Header -->
+<div class="bg-surface-container-low p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-error-container text-on-error-container font-label-code text-label-code flex items-center justify-center font-bold">B</span>
+<div class="min-w-0">
+<div class="font-headline-md text-headline-md text-on-surface truncate">Register of Members & Bearer Clause</div>
+<div class="font-label-code text-label-code text-on-surface-variant">Doc Ref: ROM-2023-BVI-102 • Modified 22/09/2021</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-code text-label-code shrink-0">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>62.4% LOW: CHECK SOURCE</span>
+</div>
+</div>
+<!-- Citation Anchor & Visual Preview -->
+<div class="p-space-lg flex-1 flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Extracted OCR Anchor</span>
+<button class="flex items-center gap-1 font-label-code text-label-code text-secondary bg-surface-container px-2 py-1 rounded hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[14px]">zoom_in</span>
+<span>[p.22:L18] Inspector View</span>
+</button>
+</div>
+<!-- Document Dark Canvas Preview -->
+<div class="bg-primary text-on-primary rounded-lg p-space-md relative overflow-hidden">
+<div class="absolute top-2 right-2 flex items-center gap-1 text-[11px] font-label-code text-on-primary-container bg-primary-container/80 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[12px]">document_scanner</span>
+<span>Optical Engine v4.2</span>
+</div>
+<div class="font-label-code text-[11px] text-on-primary-container mb-2">PAGE 22 — SHARE REGISTER & CUSTODY PROVISIONS</div>
+<div class="font-label-code text-body-sm leading-relaxed text-inverse-on-surface">
+<span class="text-on-primary-container">Line 16: ...special resolution passed by extraordinary general session...</span><br/>
+<span class="text-on-primary-container">Line 17: ...authorizing issuance of bearer equity without public record...</span><br/>
+<span class="bg-tertiary-container/80 text-on-tertiary-container px-1 py-0.5 rounded font-semibold inline-block my-1">
+                Line 18: "...voting capital is represented by 50,000 Bearer Share Certificates issued to bearer and deposited with unregistered offshore custodian..."
+              </span><br/>
+<span class="text-on-primary-container">Line 19: ...and physical title shall determine ultimate beneficial entitlement.</span>
+</div>
+</div>
+<!-- Parsed Entities Key-Value Grid -->
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-sm">
+<div class="font-caption text-caption text-on-surface-variant uppercase font-semibold">AI Synthesized Structure (Source B)</div>
+<div class="grid grid-cols-2 gap-space-sm font-body-sm text-body-sm">
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Identified Controlling Party</span>
+<span class="font-headline-md text-headline-md text-error">Undisclosed Bearer</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Equity Instrument Class</span>
+<span class="font-label-code text-label-code text-error font-bold">Physical Bearer Warrants</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Custodian Status</span>
+<span class="text-error font-semibold">Unregistered / Non-Compliant</span>
+</div>
+<div class="bg-surface p-space-sm rounded">
+<span class="text-on-surface-variant block font-caption text-caption">Identifiable UBO Trace</span>
+<span class="text-error font-bold">0.00% (Anonymized Transfer)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-on-surface-variant">Registry Hash: <span class="font-label-code">0x98c...112e</span></span>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-headline-md text-body-sm transition-all shadow-sm" id="btnSourceB" onclick="handleSelection('sourceB')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Accept Source B Extraction</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Comparative Analysis & Legal Conflict Matrix -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[22px]">policy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Systemic Discrepancy & Policy Rule Violations</h2>
+</div>
+<span class="font-label-code text-label-code bg-surface-container px-2.5 py-1 rounded text-on-surface-variant">
+          Rule Trigger: AML-FATF-REC-24 (Transparency of Legal Persons)
+        </span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low font-headline-md text-[12px] uppercase text-on-surface-variant tracking-wider">
+<tr>
+<th class="p-space-sm">Compliance Dimension</th>
+<th class="p-space-sm">Source A Declaration</th>
+<th class="p-space-sm">Source B Declaration</th>
+<th class="p-space-sm">Policy Compatibility</th>
+<th class="p-space-sm text-right">Audit Severity</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-sm font-headline-md text-on-surface">UBO Transparency</td>
+<td class="p-space-sm">Nominee Director Michael Sterling (disclosed)</td>
+<td class="p-space-sm text-error font-medium">Physical Bearer Warrants (anonymized)</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-code text-caption font-bold">STRICT PROHIBITION</span>
+</td>
+<td class="p-space-sm text-right font-metric-tabular text-error font-bold">100 / 100</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="p-space-sm font-headline-md text-on-surface">Custody Verification</td>
+<td class="p-space-sm">Registered Agent Road Town BVI</td>
+<td class="p-space-sm text-error">Unregulated Overseas Vault (Unverified)</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-code text-caption">UNAUTHORIZED</span>
+</td>
+<td class="p-space-sm text-right font-metric-tabular text-error font-bold">95 / 100</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-sm font-headline-md text-on-surface">Effective Control Party</td>
+<td class="p-space-sm">Sterling via Appointment Power</td>
+<td class="p-space-sm text-error">Certificate Holder (Unknown Entity)</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-code text-caption font-bold">FAILED ATTRIBUTION</span>
+</td>
+<td class="p-space-sm text-right font-metric-tabular text-error font-bold">98 / 100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Analyst Determination & Action Console -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex items-center justify-between border-b-0 pb-space-xs">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Analyst Resolution & Final Determination</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Select an auditable resolution path. High-risk decisions mandate cryptographic session signature.</p>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-code text-label-code text-on-surface-variant">Operator: Sarah Jenkins, CAMS (ID: SJ-8921)</span>
+</div>
+</div>
+<!-- Strategy Selector Buttons -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<!-- Option 1 -->
+<button class="res-btn p-space-md rounded-xl text-left transition-all bg-surface-container-low hover:bg-surface-container flex flex-col justify-between h-28" id="optSourceA" onclick="setResolution('sourceA')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-md text-headline-md text-on-surface">Accept Source A</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Adopt Michael Sterling nominee role as source-of-record.</span>
+</button>
+<!-- Option 2 -->
+<button class="res-btn p-space-md rounded-xl text-left transition-all bg-surface-container-low hover:bg-surface-container flex flex-col justify-between h-28" id="optSourceB" onclick="setResolution('sourceB')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-md text-headline-md text-on-surface">Accept Source B</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">inventory_2</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Log Bearer Share Clause and flag for custodian validation.</span>
+</button>
+<!-- Option 3 -->
+<button class="res-btn p-space-md rounded-xl text-left transition-all bg-surface-container-low hover:bg-surface-container flex flex-col justify-between h-28" id="optManual" onclick="setResolution('manual')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-md text-headline-md text-on-surface">Manual Override</span>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">edit_note</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Inject manually verified registry or court extracts.</span>
+</button>
+<!-- Option 4: Active Default for Critical Threat -->
+<button class="res-btn p-space-md rounded-xl text-left transition-all bg-error text-on-error flex flex-col justify-between h-28 shadow-md" id="optEscalate" onclick="setResolution('escalate')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-md text-headline-md text-on-error">Escalate to MLRO</span>
+<span class="material-symbols-outlined text-on-error text-[20px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<span class="font-caption text-caption text-on-error/90 font-medium">Reject both. Freeze onboarding and notify Special Investigations.</span>
+</button>
+</div>
+<!-- Interactive Override Detail Panel (conditional) -->
+<div class="hidden bg-surface-container-low p-space-md rounded-lg space-y-space-sm" id="manualInputContainer">
+<label class="font-headline-md text-headline-md text-on-surface flex items-center gap-2" for="overrideInput">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">verified</span>
+<span>Analyst Verified Beneficial Owner Override</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<input class="w-full bg-surface text-on-surface p-space-sm rounded-lg font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-secondary" id="overrideInput" placeholder="Enter corrected full legal UBO name..." type="text"/>
+<input class="w-full bg-surface text-on-surface p-space-sm rounded-lg font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-secondary" placeholder="Registry reference file or authenticated court docket #..." type="text"/>
+</div>
+</div>
+<!-- Mandatory Justification Box -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-md text-headline-md text-on-surface flex items-center gap-1.5" for="resolutionNotes">
+<span class="material-symbols-outlined text-error text-[18px]">history_edu</span>
+<span>Mandatory Compliance Exception Justification</span>
+</label>
+<span class="font-label-code text-caption text-on-surface-variant font-medium">Recorded in Immutable Audit Vault (SHA-256)</span>
+</div>
+<textarea class="w-full bg-surface-container-low text-on-surface p-space-md rounded-xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary leading-relaxed" id="resolutionNotes" rows="3">Bearer shares are expressly prohibited under Northgate Tier-1 AML Policy Sec 4.2 and BVI Business Companies Act revisions. Source B asserts unverified offshore physical certificates. Discrepancy cannot be reconciled via documented agency agreements. Initiating mandatory Suspicious Transaction Referral to the nominated Money Laundering Reporting Officer (MLRO).</textarea>
+</div>
+<!-- Escalation Summary Meta -->
+<div class="bg-surface-container-high/40 p-space-md rounded-xl flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-primary text-primary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">Target Destination: MLRO Special Investigations Unit</div>
+<div class="font-caption text-caption text-on-surface-variant">Assigned Officer on duty: Marcus Vance (Head of Sanctions Enforcement)</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="freezeAccount" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface font-semibold select-none cursor-pointer" for="freezeAccount">
+            Apply automated freeze on correspondent transaction accounts
+          </label>
+</div>
+</div>
+<!-- Footer Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-headline-md text-body-sm hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Return to Active Case Overview</span>
+</button>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-error text-on-error font-headline-md text-body-sm shadow-md hover:bg-on-error-container transition-all flex items-center justify-center gap-2" id="btnSubmitResolution" onclick="confirmResolution()" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirm Exception Resolution</span>
+</button>
+<button class="flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-headline-md text-body-sm hover:bg-primary-container transition-all flex items-center justify-center gap-2" type="button">
+<span>Next Exception (2 of 2)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleSelection(source) {
+    if (source === 'sourceA') {
+      setResolution('sourceA');
+    } else if (source === 'sourceB') {
+      setResolution('sourceB');
+    }
+  }
+
+  function setResolution(type) {
+    const buttons = {
+      sourceA: document.getElementById('optSourceA'),
+      sourceB: document.getElementById('optSourceB'),
+      manual: document.getElementById('optManual'),
+      escalate: document.getElementById('optEscalate')
+    };
+
+    const manualContainer = document.getElementById('manualInputContainer');
+    const submitBtn = document.getElementById('btnSubmitResolution');
+    const notesArea = document.getElementById('resolutionNotes');
+
+    // Reset all buttons to default neutral styling
+    Object.keys(buttons).forEach(k => {
+      const btn = buttons[k];
+      btn.className = 'res-btn p-space-md rounded-xl text-left transition-all bg-surface-container-low hover:bg-surface-container flex flex-col justify-between h-28';
+      const heading = btn.querySelector('.font-headline-md');
+      if (heading) heading.className = 'font-headline-md text-headline-md text-on-surface';
+    });
+
+    // Apply active styling
+    if (type === 'escalate') {
+      buttons.escalate.className = 'res-btn p-space-md rounded-xl text-left transition-all bg-error text-on-error flex flex-col justify-between h-28 shadow-md';
+      buttons.escalate.querySelector('.font-headline-md').className = 'font-headline-md text-headline-md text-on-error';
+      submitBtn.className = 'flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-error text-on-error font-headline-md text-body-sm shadow-md hover:bg-on-error-container transition-all flex items-center justify-center gap-2';
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span><span>Confirm MLRO Referral</span>';
+      manualContainer.classList.add('hidden');
+      notesArea.value = 'Bearer shares are expressly prohibited under Northgate Tier-1 AML Policy Sec 4.2 and BVI Business Companies Act revisions. Source B asserts unverified offshore physical certificates. Discrepancy cannot be reconciled via documented agency agreements. Initiating mandatory Suspicious Transaction Referral to the nominated Money Laundering Reporting Officer (MLRO).';
+    } else if (type === 'sourceA') {
+      buttons.sourceA.className = 'res-btn p-space-md rounded-xl text-left transition-all bg-secondary-container text-on-secondary-container flex flex-col justify-between h-28 shadow-md';
+      buttons.sourceA.querySelector('.font-headline-md').className = 'font-headline-md text-headline-md text-on-secondary-container';
+      submitBtn.className = 'flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-headline-md text-body-sm shadow-md transition-all flex items-center justify-center gap-2';
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Confirm Source A Resolution</span>';
+      manualContainer.classList.add('hidden');
+      notesArea.value = 'Reconciled in favor of Source A (Certificate of Incumbency) following receipt of certified confirmation from corporate registered agent. Power of appointment under Michael Sterling confirmed as valid and active.';
+    } else if (type === 'sourceB') {
+      buttons.sourceB.className = 'res-btn p-space-md rounded-xl text-left transition-all bg-secondary-container text-on-secondary-container flex flex-col justify-between h-28 shadow-md';
+      buttons.sourceB.querySelector('.font-headline-md').className = 'font-headline-md text-headline-md text-on-secondary-container';
+      submitBtn.className = 'flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-headline-md text-body-sm shadow-md transition-all flex items-center justify-center gap-2';
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Confirm Source B Resolution</span>';
+      manualContainer.classList.add('hidden');
+      notesArea.value = 'Accepted Source B extraction. Case placed in suspended state pending physical bearer warrant deposit confirmation by an authorized Tier-1 custodian institution.';
+    } else if (type === 'manual') {
+      buttons.manual.className = 'res-btn p-space-md rounded-xl text-left transition-all bg-tertiary-container text-on-tertiary-container flex flex-col justify-between h-28 shadow-md';
+      buttons.manual.querySelector('.font-headline-md').className = 'font-headline-md text-headline-md text-on-tertiary-container';
+      submitBtn.className = 'flex-1 sm:flex-initial px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary font-headline-md text-body-sm shadow-md transition-all flex items-center justify-center gap-2';
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">save</span><span>Apply Manual Override</span>';
+      manualContainer.classList.remove('hidden');
+      notesArea.value = 'Manual analyst override triggered based on direct verification via BVI Commercial Registry electronic portal (VIRRGIN). Confirmed amended filing superseding prior entries.';
+    }
+  }
+
+  function confirmResolution() {
+    const notes = document.getElementById('resolutionNotes').value;
+    if (!notes.trim()) {
+      alert('Mandatory Compliance Justification cannot be left empty.');
+      return;
+    }
+    const btn = document.getElementById('btnSubmitResolution');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitting to Audit Vault...</span>';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Resolution Signed & Logged</span>';
+      btn.classList.remove('bg-error', 'hover:bg-on-error-container');
+      btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+    }, 1000);
+  }
+</script></main></div></body></html>

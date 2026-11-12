@@ -1,0 +1,16 @@
+# Docker ignore file
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.env
+.env.*
+*.db
+backend/.venv/
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+.git/
+.github/
+.vscode/
+.idea/
