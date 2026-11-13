@@ -1,4 +1,4 @@
-name: Build, Test & Deploy Northgate Chase to Google Cloud Run
+name: Build, Test & Deploy Analyst Assist to Google Cloud Run
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 env:
   GCP_REGION: asia-south1
   ARTIFACT_REPO: northgate-chase-repo
-  SERVICE_NAME: northgate-chase
+  SERVICE_NAME: ekyc-analyst-assist  # do NOT change: northgate-chase is a separate live app
 
 jobs:
   test:
