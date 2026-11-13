@@ -131,4 +131,4 @@ jobs:
           echo "Testing ${SERVICE_URL}/api/health..."
           curl -f -s "${SERVICE_URL}/api/health" || exit 1
           echo "Testing ${SERVICE_URL}/..."
-          curl -f -s -I "${SERVICE_URL}/" || exit 1
+          curl -f -s -o /dev/null "${SERVICE_URL}/" || exit 1
