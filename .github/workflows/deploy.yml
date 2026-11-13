@@ -111,6 +111,7 @@ jobs:
             --image "${IMAGE_TAG}" \
             --region "${{ env.GCP_REGION }}" \
             --platform managed \
+            --allow-unauthenticated \
             --port 8080 \
             --memory 1Gi \
             --cpu 1 \
